@@ -53,12 +53,12 @@
   * data
     * is ephemeral
     * will be discarded | stop the services
+  *
 
 * [how to configure](docs/getting-started/setup-openfga/configure-openfga) 
   * storage backends
   * tuning performance
-* and deploying OpenFGA securely in production-ready environments, refer to the 
-> documentation: [Running in Production](docs/getting-started/running-in-production).
+* [how to deploy OpenFGA securely | production](docs/getting-started/running-in-production)
 
 
 Run OpenFGA with in-memory storage (⚠️ **not for production**):
