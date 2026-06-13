@@ -42,34 +42,23 @@
 - 🛠 Can also be embedded as a [Go library](https://pkg.go.dev/github.com/openfga/openfga/pkg/server#example-NewServerWithOpts)
 - 🤝 Adopted by [Auth0](https://fga.dev), [Grafana Labs](https://grafana.com/), [Canonical](https://canonical.com/), [Docker](https://docker.com),  [Agicap](https://agicap.com), [Read.AI](https://read.ai) and [others](https://github.com/openfga/community/blob/main/ADOPTERS.md)
 
----
-
-## Table of Contents
-- [Quickstart](#quickstart)
-- [Installation](#installation)
-    - [Docker](#docker)
-    - [Docker Compose](#docker-compose)
-    - [Homebrew](#homebrew)
-    - [Precompiled Binaries](#precompiled-binaries)
-    - [Build from Source](#build-from-source)
-    - [Verify Installation](#verify-installation)
-- [Playground](#playground)
-- [Next Steps](#next-steps)
-- [Limitations](#limitations)
-- [Production Readiness](#production-readiness)
-- [Contributing & Community](#contributing--community)
 
 ---
 
 ## Quickstart
 
-> [!IMPORTANT]  
-> The following steps are meant for quick local setup and evaluation.  
-> When using the default **in-memory storage engine**, data is ephemeral and will be discarded once the service stops.
->
-> For [details on configuring](https://openfga.dev/docs/getting-started/setup-openfga/configure-openfga) storage 
-> backends, tuning performance, and deploying OpenFGA securely in production-ready environments, refer to the 
-> documentation: [Running in Production](https://openfga.dev/docs/getting-started/running-in-production).
+* steps | local setup & evaluation
+
+* | use the default **in-memory storage engine**,
+  * data
+    * is ephemeral
+    * will be discarded | stop the services
+
+* [how to configure](docs/getting-started/setup-openfga/configure-openfga) 
+  * storage backends
+  * tuning performance
+* and deploying OpenFGA securely in production-ready environments, refer to the 
+> documentation: [Running in Production](docs/getting-started/running-in-production).
 
 
 Run OpenFGA with in-memory storage (⚠️ **not for production**):
