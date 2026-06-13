@@ -49,11 +49,13 @@
 
 * steps | local setup & evaluation
 
-* | use the default **in-memory storage engine**,
+* **in-memory storage engine**,
+  * default one
   * data
     * is ephemeral
     * will be discarded | stop the services
-  *
+  * ❌NOT use cases ❌
+    * production
 
 * [how to configure](docs/getting-started/setup-openfga/configure-openfga) 
   * storage backends
