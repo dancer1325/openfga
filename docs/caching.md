@@ -9,7 +9,9 @@
   2. [**Check Iterator Cache**](#check-iterator-cache)
     * Caches database query results (iterators)
       * reduce database load | check operations
-  3. [**List Objects Iterator Cache**](#list-objects-iterator-cache): Same as Check Iterator Cache, but used for List Objects requests.
+  3. [**List Objects Iterator Cache**](#list-objects-iterator-cache)
+    * vs Check Iterator Cache
+but used for List Objects requests.
   4. [**Cache Controller**](#cache-controller): Periodically invalidates cache entries in the background based on recent writes to the store.
   5. [**Authorization Model & Typesystem Cache**](#authorization-model--typesystem-cache): Always-on caches for authorization models and their compiled typesystems.
 
