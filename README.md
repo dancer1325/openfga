@@ -20,8 +20,15 @@
 
 ---
 
-**OpenFGA** is a high-performance, flexible authorization/permission engine inspired by [Google Zanzibar](https://research.google/pubs/pub48190/).
-It helps developers easily model and enforce fine-grained access control in their applications.
+* **OpenFGA**
+  * == authorization/permission engine
+    * high-performance
+    * flexible  
+    * inspired -- by -- [Google Zanzibar](https://research.google/pubs/pub48190/)
+  * allows
+    * about fine-grained access control
+      * easily model 
+and enforce  in their applications.
 
 ## Highlights
 
