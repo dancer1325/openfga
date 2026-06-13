@@ -28,7 +28,7 @@
   * allows
     * about fine-grained access control
       * easily model 
-and enforce  in their applications.
+      * enforce | their applications
 
 ## Highlights
 
