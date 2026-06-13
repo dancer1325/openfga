@@ -164,11 +164,15 @@ If everything is running correctly, you should get a response with information a
 
 ## Playground
 
-The Playground lets you model, visualize, and test authorization setups.
-By default, it’s available at: [http://localhost:3000/playground](http://localhost:3000/playground)
-
-> [!NOTE]  
-> The Playground is intended for **local development only**.  
+* lets you 
+  * about authorization setups
+    * model
+    * visualize
+    * test 
+* by default,
+  * | http://localhost:3000/playground
+* use cases
+  * local development
 > It can currently only be configured to connect to an OpenFGA server running on `localhost`.
 
 Disable it with:
