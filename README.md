@@ -56,6 +56,16 @@
     * will be discarded | stop the services
   * ❌NOT use cases ❌
     * production
+  * steps
+
+```shell
+docker run -p 8080:8080 -p 3000:3000 openfga/openfga run
+
+# create a store
+curl -X POST 'localhost:8080/stores' \
+  --header 'Content-Type: application/json' \
+  --data-raw '{"name": "openfga-demo"}'
+```
 
 * [how to configure](docs/getting-started/setup-openfga/configure-openfga) 
   * storage backends
@@ -63,36 +73,24 @@
 * [how to deploy OpenFGA securely | production](docs/getting-started/running-in-production)
 
 
-Run OpenFGA with in-memory storage (⚠️ **not for production**):
-
-```shell
-docker run -p 8080:8080 -p 3000:3000 openfga/openfga run
-```
-
-Once running, create a store:
-
-```shell
-curl -X POST 'localhost:8080/stores' \
-  --header 'Content-Type: application/json' \
-  --data-raw '{"name": "openfga-demo"}'
-```
-
 ## Installation
 
 ### Docker
 
-OpenFGA is available on [Docker Hub](https://hub.docker.com/r/openfga/openfga), so you can quickly start it using the
-in-memory datastore by running the following commands:
+* | [Docker Hub](https://hub.docker.com/r/openfga/openfga)
+
+ 
+* steps
 
 ```shell
 docker pull openfga/openfga
 docker run -p 8080:8080 -p 3000:3000 openfga/openfga run
 ```
 
-> [!NOTE]
-> When the HTTP server is enabled, it will attempt to establish an internal client connection to the gRPC server via unix domain socket.
-> When it is not possible to establish a UDS, the client connection automatically falls back to using a TCP socket.
->
+* if the HTTP server is enabled -> it will try to -- ,via unix domain socket, -- establish an internal client connection to the gRPC server 
+* if it is NOT POSSIBLE to establish a UDS -> the client connection AUTOMATICALLY falls back -- to -- using a TCP socket
+
+TODO
 > If running the Docker image using the `--read-only` option, the `--tmpfs` option must also be set in order to enabled use of the unix domain socket.
 > For example `--tmpfs /tmp`
 
