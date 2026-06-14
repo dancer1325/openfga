@@ -1,15 +1,11 @@
 # Dependencies Policy
 
-## Purpose
-
-This policy describes how OpenFGA maintainers consume third-party packages.
-
-## Scope
-
-This policy applies to all OpenFGA maintainers and all third-party packages used in the OpenFGA project.
+* goal
+  * how OpenFGA maintainers consume third-party packages
 
 ## Policy
 
+TODO:
 OpenFGA maintainers must follow these guidelines when consuming third-party packages:
 
 - Only use third-party packages that are necessary for the functionality of OpenFGA.
@@ -27,18 +23,8 @@ When adding a new third-party package to OpenFGA, maintainers must follow these 
 2. Research the package. Is it well-maintained? Does it have a good reputation? 
 3. Choose a version of the package. Use the latest version whenever possible. 
 4. Pin the package to the specific version in the OpenFGA codebase. 
-5. Update the OpenFGA documentation to reflect the new dependency.
-
-## Enforcement
-
-This policy is enforced by the OpenFGA maintainers.
-
-Maintainers are expected to review each other's code changes to ensure that they comply with this policy.
-
-## Exceptions
-
-Exceptions to this policy may be granted by the OpenFGA project lead on a case-by-case basis.
+5. Update the OpenFGA documentation to reflect the new dependency
 
 ## Credits
 
-This policy was adapted from the [Kubescape Community](https://github.com/kubescape/kubescape/blob/master/docs/environment-dependencies-policy.md)
+* inspired -- by -- [Kubescape Community](https://github.com/kubescape/kubescape/blob/master/docs/environment-dependencies-policy.md)
