@@ -51,9 +51,12 @@
       * environments
       * tenants
 
-- The [`/authorization-models`](https://openfga.dev/api/service#/Authorization%20Models/WriteAuthorizationModel) endpoint allows writing new authorization models, which define the authorization policies.
-
- - The [`/write`](https://openfga.dev/api/service#/Relationship%20Tuples/Write) endpoint allows writing and deleting relationship tuples, which are validated and stored in the configured database.
+* [`/authorization-models` endpoint](https://openfga.dev/api/service#/Authorization%20Models/WriteAuthorizationModel)
+  * allows 
+    * writing NEW authorization models / define the authorization policies
+*  [`/write` endpoint](https://openfga.dev/api/service#/Relationship%20Tuples/Write)
+  * allows
+    * writing & deleting relationship tuples / are validated & stored | configured database
 
 - The [`/read`](https://openfga.dev/api/service#/Relationship%20Tuples/Read) endpoint allows retrieving the data stored in the database.
 
