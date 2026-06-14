@@ -1,6 +1,8 @@
 # OpenFGA High Level Architecture
 
-OpenFGA is a server that reads/writes from a database, and its architecture is similar to any other system that does that:
+* == server /
+  * reads/writes -- from a -- database
+* its architecture
 
 ![basic_architecture](deployment.svg)
 
