@@ -1,4 +1,4 @@
-<div align="center">
+lo<div align="center">
 
 ![OpenFGA Logo](./openfga-logo.png)
 # OpenFGA
@@ -200,16 +200,6 @@ Change port:
 >
 > This starts OpenFGA on port 4000 and configures the Playground accordingly.
 
-## Next Steps
-
-Take a look at examples of how to:
-
-- [Write an Authorization Model](https://openfga.dev/api/service#/Authorization%20Models/WriteAuthorizationModel)
-- [Write Relationship Tuples](https://openfga.dev/api/service#/Relationship%20Tuples/Write)
-- [Perform Authorization Checks](https://openfga.dev/api/service#/Relationship%20Queries/Check)
-- [Add Authentication to your OpenFGA server](https://openfga.dev/docs/getting-started/setup-openfga/docker#configuring-authentication)
-
-📚 Explore the [Documentation](https://openfga.dev/) and [API Reference](https://openfga.dev/api/service).
 
 ## Limitations
 
@@ -227,11 +217,7 @@ Take a look at examples of how to:
 - 🗄 Supported storage: PostgreSQL 14+, MySQL 8, SQLite (beta)
 * [here](docs/best-practices/running-in-production)
 
-If your organization is using OpenFGA, please consider adding it to the list.
-
 ## Contributing & Community
-
-We welcome contributions and community participation.
 
 - 🤝 See [CONTRIBUTING](https://github.com/openfga/.github/blob/main/CONTRIBUTING.md)
 - 🗓 [Monthly Community Meetings](https://github.com/openfga/community/blob/main/community-meetings.md)
