@@ -19,18 +19,29 @@
     * ways to authenticate
       * -- via -- a shared secret
       * -- via -- client credentials flow
-      If the application uses client credentials, it needs to obtain those for an OAuth client credentials provider (KeyCloak, Auth0, Microsoft Entra etc). 
+        * requirements: provider -- to -- obtain the OAuth client credentials
+          * _Examples:_ KeyCloak, Auth0, Microsoft Entra
+
+TODO:
 - The cluster needs to have an ingress for load balancing (e.g. nginx).
 - The OpenFGA service needs a database. At the time of writing the supported ones are Postgres, MySQL and SQLite. SQLite is not designed for multiple instances of OpenFGA.
 - OpenFGA supports OTEL metrics, OTEL traces and JSON logging. These can be sent to any collector.
 
 ## Internal Architecture
 
-The following diagram describes at high level how OpenFGA works internally. 
-
 ![internals](internals.svg)
 
-- The [`/store`](https://openfga.dev/api/service#/Stores/CreateStore) endpoints allow managing OpenFGA stores, which contain the authorization model + the data. Stores can be used for isolating different applications, environments, or tenants.
+* ["/store" endpoints](https://openfga.dev/api/service#/Stores/CreateStore) 
+  * allow
+    * managing OpenFGA stores
+
+* stores
+  * == authorization model + data.
+  * uses
+    * isolate DIFFERENT
+      * applications
+      * environments
+      * tenants
 
 - The [`/authorization-models`](https://openfga.dev/api/service#/Authorization%20Models/WriteAuthorizationModel) endpoint allows writing new authorization models, which define the authorization policies.
 
