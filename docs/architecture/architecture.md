@@ -22,8 +22,9 @@
         * requirements: provider -- to -- obtain the OAuth client credentials
           * _Examples:_ KeyCloak, Auth0, Microsoft Entra
 
-TODO:
-- The cluster needs to have an ingress for load balancing (e.g. nginx).
+* requirements 
+  * cluster / have an ingress 
+    * _Example:_ nginx
 - The OpenFGA service needs a database. At the time of writing the supported ones are Postgres, MySQL and SQLite. SQLite is not designed for multiple instances of OpenFGA.
 - OpenFGA supports OTEL metrics, OTEL traces and JSON logging. These can be sent to any collector.
 
