@@ -215,9 +215,10 @@ Take a look at examples of how to:
 
 ### MySQL Storage engine
 
-The MySQL storage engine has stricter length limits on tuple properties than other backends. See [docs](https://openfga.dev/docs/getting-started/setup-openfga/docker#configuring-data-storage).
-
-💡 OpenFGA’s MySQL adapter was contributed by @twintag — thank you!
+* MySQL storage engine 
+  * vs other backends,
+    * | tuple properties, 
+      * [has stricter length limits](docs/getting-started/setup-openfga/docker#configuring-data-storage)
 
 ## Production Readiness
 
