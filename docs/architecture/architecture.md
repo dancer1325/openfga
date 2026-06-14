@@ -8,10 +8,15 @@
 
 * client application 
   * == service / calls OpenFGA
-    * ways to calle
-      * -- via sIt can call it using the gRPC API or the HTTP API directly, or through OpenFGA's SDKs ([JavaScript](https://github.com/openfga/js-sdk/), [Python](https://github.com/openfga/python-sdk/), [Go](https://github.com/openfga/go-sdk/), [Java](https://github.com/openfga/java-sdk/), [.NET](https://github.com/openfga/dotnet-sdk/)), which use the HTTP API.
+    * ways to call
+      * -- via -- gRPC API
+      * -- via -- HTTP API
+      * -- vía -- OpenFGA's SDKs
+        * -- [JavaScript](https://github.com/openfga/js-sdk/)
+       * -- via -- [Python](https://github.com/openfga/python-sdk/)
+     [Go](https://github.com/openfga/go-sdk/), [Java](https://github.com/openfga/java-sdk/), [.NET](https://github.com/openfga/dotnet-sdk/)), which use the HTTP API
 
-- Calls to the OpenFGA API can be authenticated using a shared secret or through a client credentials flow. If the application uses client credentials, it needs to obtain those for an OAuth client credentials provider (KeyCloak, Auth0, Microsoft Entra etc). 
+    * Calls to the OpenFGA API can be authenticated using a shared secret or through a client credentials flow. If the application uses client credentials, it needs to obtain those for an OAuth client credentials provider (KeyCloak, Auth0, Microsoft Entra etc). 
 - The cluster needs to have an ingress for load balancing (e.g. nginx).
 - The OpenFGA service needs a database. At the time of writing the supported ones are Postgres, MySQL and SQLite. SQLite is not designed for multiple instances of OpenFGA.
 - OpenFGA supports OTEL metrics, OTEL traces and JSON logging. These can be sent to any collector.
