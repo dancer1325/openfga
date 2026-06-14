@@ -221,15 +221,12 @@ Take a look at examples of how to:
       * [has stricter length limits](docs/getting-started/setup-openfga/docker#configuring-data-storage)
 
 ## Production Readiness
-
+ TODO: relocate to the page
 - ✅ Used in production by [Auth0 FGA](https://auth0.com/fine-grained-authorization) since December 2021
 - ⚠️ Memory storage adapter is **for development only**
 - 🗄 Supported storage: PostgreSQL 14+, MySQL 8, SQLite (beta)
-- 📘 See [Running in Production](https://openfga.dev/docs/best-practices/running-in-production)
+* [here](docs/best-practices/running-in-production)
 
-The OpenFGA team treats **production-impacting issues with highest priority**.
-
-See organizations using OpenFGA in production: [ADOPTERS.md](https://github.com/openfga/community/blob/main/ADOPTERS.md).
 If your organization is using OpenFGA, please consider adding it to the list.
 
 ## Contributing & Community
