@@ -6,7 +6,10 @@
 
 ![basic_architecture](deployment.svg)
 
-- The client application is a service that calls OpenFGA. It can call it using the gRPC API or the HTTP API directly, or through OpenFGA's SDKs ([JavaScript](https://github.com/openfga/js-sdk/), [Python](https://github.com/openfga/python-sdk/), [Go](https://github.com/openfga/go-sdk/), [Java](https://github.com/openfga/java-sdk/), [.NET](https://github.com/openfga/dotnet-sdk/)), which use the HTTP API.
+* client application 
+  * == service / calls OpenFGA
+    * ways to calle
+      * -- via sIt can call it using the gRPC API or the HTTP API directly, or through OpenFGA's SDKs ([JavaScript](https://github.com/openfga/js-sdk/), [Python](https://github.com/openfga/python-sdk/), [Go](https://github.com/openfga/go-sdk/), [Java](https://github.com/openfga/java-sdk/), [.NET](https://github.com/openfga/dotnet-sdk/)), which use the HTTP API.
 
 - Calls to the OpenFGA API can be authenticated using a shared secret or through a client credentials flow. If the application uses client credentials, it needs to obtain those for an OAuth client credentials provider (KeyCloak, Auth0, Microsoft Entra etc). 
 - The cluster needs to have an ingress for load balancing (e.g. nginx).
